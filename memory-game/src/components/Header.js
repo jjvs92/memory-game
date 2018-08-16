@@ -6,8 +6,8 @@ const Header = props =>
     <div>
         <nav class="navbar">            
                 <div>Clicky App</div>
-                <div>{props.children}</div>
-                <div>score: {props.children}  |  Highscore: {props.children}</div>
+                <div>{props.centerText}</div>
+                <div>score: {props.score}  |  Highscore: {props.highScore}</div>
         </nav>
         
     </div>

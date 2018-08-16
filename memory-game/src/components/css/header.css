@@ -1,5 +1,7 @@
 .navbar{
     background: red;
     height: 80px;
+    position: sticky;
+    width: 100%;
     
 }

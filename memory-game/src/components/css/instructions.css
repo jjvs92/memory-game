@@ -1,0 +1,15 @@
+.titleHome{
+    background: blue;
+    height: 280px;
+    text-align: center;
+}
+
+#title{
+    color: white;
+    padding-top: 50px;
+}
+
+#instructions{
+    color: white;
+    
+}

@@ -1,6 +1,5 @@
 import React from "react";
 import "./css/header.css";
-import Instructions from "./instructions";
 
 
 const Header = props => 
@@ -10,8 +9,7 @@ const Header = props =>
                 <div>{props.children}</div>
                 <div>score: {props.children}  |  Highscore: {props.children}</div>
         </nav>
-
-        <Instructions/>
+        
     </div>
     
 

@@ -44,6 +44,10 @@ class App extends Component {
      if(char.specific.clicked) {
        let newScore = this.state.score;
        console.log("CLICKED")
+       if(this.state.score === 12){
+
+         this.setState({centerText: "You win!, click an icon to play again", score: 0})
+       }
         if(this.state.highScore < newScore){
           this.setState({highScore: newScore, score: 0, centerText: "You lose, click to try again"})
         }

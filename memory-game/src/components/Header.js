@@ -4,7 +4,7 @@ import "./css/header.css";
 
 const Header = props => 
     <div>
-        <nav class="navbar">            
+        <nav className="navbar">            
                 <div>Clicky App</div>
                 <div>{props.centerText}</div>
                 <div>score: {props.score}  |  Highscore: {props.highScore}</div>

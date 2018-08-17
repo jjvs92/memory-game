@@ -8,7 +8,7 @@
     "react-scripts": "1.1.4",
     "body-parser": "^1.17.2",
     "express": "^4.15.4",  
-    "build": "cd client && npm run build",
+    "build": "cd memory-game && npm run build",
     "heroku-postbuild": "npm run build"     
   },
   "scripts": {

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Header from "./components/Header";
 import Instructions from "./components/Instructions";
 import HouseCards from "./components/HouseCards";
-import Characters from "./characters.json";
+import Characters from "./Characters.json";
 import CharacterCard from "./components/CharacterCard";
 import Footer from "./components/Footer";
 import "./components/css/BodyBackground.css";

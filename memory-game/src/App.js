@@ -5,6 +5,7 @@ import HouseCards from "./components/HouseCards";
 import Characters from "./characters.json";
 import CharacterCard from "./components/CharacterCard";
 import Footer from "./components/Footer";
+import "./components/css/BodyBackground.css";
 
 
 class App extends Component {
@@ -41,19 +42,22 @@ class App extends Component {
 
 
      if(char.specific.clicked) {
-       this.setState({score: 0, centerText: "Incorrect Guess"})
+       let newScore = this.state.score;
        console.log("CLICKED")
+        if(this.state.highScore < newScore){
+          this.setState({highScore: newScore, score: 0, centerText: "You lose, click to try again"})
+        }
 
        for(var i = 0; i<data.length; i++){
          data[i].clicked = false
        }
        console.log(data);
      } else{
-
+      
       data[char.index].clicked = true;
 
       let newScore= this.state.score + 1;
-       this.setState({score: newScore})
+       this.setState({score: newScore, centerText: "Good choice!"})
      }
 
       
@@ -70,7 +74,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="bodyBackground">
       <Header
       centerText={this.state.centerText}
       score={this.state.score}

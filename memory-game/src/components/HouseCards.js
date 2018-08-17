@@ -1,11 +1,11 @@
 import React from "react";
-import CharacterCard from "./CharacterCard";
+import "./css/houseCards.css"
 
 const HouseCards = props => (
     
     <div className="container">
 
-        <div className="row">
+        <div className="row houseCards">
             {props.children}
         </div>
         

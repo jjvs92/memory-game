@@ -1,4 +1,8 @@
 .footer{
     width: 100%;
-    background: red;
+    background: #0100AD;
+    height: 80px;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
 }

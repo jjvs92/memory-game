@@ -1,5 +1,16 @@
 .characterCard{
     height: 150px;
     width: 150px;
-    margin-left: 22%;
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
+
+.cardImage{
+    border: 2px;
+    border-color: black;
+}
+
+.characterCardText{
+    text-align: center;
 }
